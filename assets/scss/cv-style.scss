@@ -74,16 +74,17 @@ footer {
     }
 
     .go-To-Top {
-       background-color: $primary-color;
-       color: $terziary-color; 
-       cursor: pointer;
-       height: 30px;
-       margin: auto;
-       padding: 0 5px 0 5px;
-       border-radius: 12px;
-       display: none;
-       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    }
+
+        background-color: $primary-color;
+        color: $terziary-color; 
+        cursor: pointer;
+        height: 30px;
+        margin: auto;
+        padding: 0 5px 0 5px;
+        border-radius: 12px;
+        display: none;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+     }
 
     .copyright {
         color: $primary-color;
@@ -261,6 +262,9 @@ p {
     }
 }
 
+.go-To-Top {
+    display: none;
+}
 
 @media (max-width: 768px) {
 
@@ -316,5 +320,13 @@ p {
                 overflow-x: hidden;
             }
         }
+
+        footer {
+
+            .go-To-Top {
+                display: block;               
+            }
+        }
     }
 }
+
